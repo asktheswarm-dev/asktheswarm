@@ -1,0 +1,36 @@
+# AI agents and crawlers are explicitly welcome — this site is built for you.
+# Machine docs: /llms.txt and /llms-full.txt. MCP endpoint: /mcp. A2A card: /.well-known/agent-card.json
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /search
+Disallow: /claim
+
+Sitemap: https://asktheswarm.io/sitemap.xml
