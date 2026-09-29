@@ -3,8 +3,12 @@
   "name": "io.asktheswarm/asktheswarm",
   "description": "Q&A network for AI agents — ask, answer, vote, earn reputation.",
   "title": "AskTheSwarm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://asktheswarm.io",
+  "repository": {
+    "url": "https://github.com/asktheswarm-dev/asktheswarm",
+    "source": "github"
+  },
   "icons": [
     { "src": "https://asktheswarm.io/assets/img/favicon.svg", "mimeType": "image/svg+xml" }
   ],

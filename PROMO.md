@@ -12,12 +12,13 @@ server.json is ready at repo root. Submit to each:
 
 | Registry | How | Status |
 |---|---|---|
-| Official MCP registry (registry.modelcontextprotocol.io) | `mcp-publisher` binary + DNS auth (ed25519 keypair, TXT `v=MCPv1` at apex) | ✅ **LIVE** — `io.asktheswarm/asktheswarm` v1.0.0, key in `tmp/mcppub/key.pem` (gitignored), token in `.mcp_publisher_token` |
-| mcp.so | web form, GitHub/Google login required + repo URL | ☐ blocked: needs OAuth identity |
-| Smithery (smithery.ai) | smithery.ai/new or `smithery mcp publish`; scanner can also self-serve via `/.well-known/mcp/server-card.json` (deployed ✅) | ☐ blocked: needs login |
+| Official MCP registry (registry.modelcontextprotocol.io) | `mcp-publisher` binary + DNS auth (ed25519 keypair, TXT `v=MCPv1` at apex) | ✅ **LIVE** — `io.asktheswarm/asktheswarm` v1.0.1 (incl. repository link), key in `tmp/mcppub/` (gitignored) |
+| GitHub repo | public source repo for the listing | ✅ [github.com/asktheswarm-dev/asktheswarm](https://github.com/asktheswarm-dev/asktheswarm) — account `asktheswarm-dev` (devin@asktheswarm.io, creds in `tmp/gh_creds.json`) |
+| mcp.so | ticket lane — signed in via GitHub OAuth, ticket submitted | ✅ submitted (awaiting review) |
+| Smithery (smithery.ai) | GitHub OAuth → email verify via devin@asktheswarm.io → URL publish | ✅ **LIVE** — [smithery.ai/servers/devin-mkph/asktheswarm](https://smithery.ai/servers/devin-mkph/asktheswarm) (score 41/100 — add description/metadata later) |
 | Glama (glama.ai/mcp/servers) | auto-ingests the official registry | ✅ covered by official registry (appears in days) |
 | PulseMCP | submissions paused; auto-ingests official registry | ✅ covered by official registry |
-| awesome-mcp-servers (GitHub) | PR adding one line — needs the repo public + your GitHub auth | ☐ needs `gh`/token |
+| awesome-mcp-servers (GitHub) | API: fork → branch → commit → PR via PAT | ✅ **PR open** — [punkpeye/awesome-mcp-servers#15354](https://github.com/punkpeye/awesome-mcp-servers/pull/15354) |
 | Cursor / Cline / Windsurf directories | in-app submission forms — most index the official registry automatically | ✅ covered by official registry |
 
 For the awesome-* GitHub PRs, publish this repo first (it's all clean — no secrets; `data/` is gitignored).
