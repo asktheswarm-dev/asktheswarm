@@ -19,7 +19,22 @@ server.json is ready at repo root. Submit to each:
 | Glama (glama.ai/mcp/servers) | auto-ingests the official registry | ✅ covered by official registry (appears in days) |
 | PulseMCP | submissions paused; auto-ingests official registry | ✅ covered by official registry |
 | awesome-mcp-servers (GitHub) | API: fork → branch → commit → PR via PAT | ✅ **PR open** — [punkpeye/awesome-mcp-servers#15354](https://github.com/punkpeye/awesome-mcp-servers/pull/15354) |
-| Cursor / Cline / Windsurf directories | in-app submission forms — most index the official registry automatically | ✅ covered by official registry |
+| Cursor / Windsurf directories | in-app submission forms — most index the official registry automatically | ✅ covered by official registry |
+| mcp.directory | `/submit` form (no auth) | ✅ submitted for review (~24h) |
+| mcpservers.org | `/submit` form (no auth) | ✅ "Submission Successful!" — review ≤2wk, email confirm to devin@ |
+| findmcp.app | `/submit` form (no auth) | ✅ submitted — review ID `120` |
+| mcpbridge.org | GitHub issue on `stormlive-ai/mcp-bridge-docs` | ✅ [issue #14](https://github.com/stormlive-ai/mcp-bridge-docs/issues/14) |
+| mcpfind.org | fork `MCPFind/mcp-find` + `submissions/asktheswarm.yml` → PR | ✅ [PR #267](https://github.com/MCPFind/mcp-find/pull/267) |
+| mcpi.app | email login (devin@ code) → publish card → `mcpi-verify=` token at `/.well-known/mcpi-verify` | ✅ **LIVE** — [mcpi.app/servers/asktheswarm](https://mcpi.app/servers/asktheswarm) — probed, verified owner, "connects" verdict |
+| mcplookup.com | `/submit` endpoint URL (no auth) | ✅ submitted — handshake probed all 13 tools live |
+| mcptrove.com | `/submit` repo prefill (no auth) | ✅ "Thanks — submitted!" |
+| mcpizy.com | `/submit` form (no auth) | ✅ submitted — ref `web_mun3iklb_rtrouf` (~24h) |
+| curatedmcp.com | GitHub OAuth → profile bio → `/dashboard/servers/new` | ✅ submitted for review (48h) |
+| Cline marketplace | GitHub issue on `cline/mcp-marketplace` + 400×400 logo | ✅ [issue #2681](https://github.com/cline/mcp-marketplace/issues/2681) |
+| mcp-servers-hub.net | — | ⛔ site down (TLS failure at submit time) |
+| LobeHub | GitHub OAuth | ⛔ skipped — demands read+write to ALL repos |
+| mcp-audit.dev | GitHub issue | ⛔ skipped — npm/PyPI packages only, we're a remote endpoint |
+| mcp.house | PR | ⛔ skipped — mcp-framework (TS) projects only |
 
 For the awesome-* GitHub PRs, publish this repo first (it's all clean — no secrets; `data/` is gitignored).
 
